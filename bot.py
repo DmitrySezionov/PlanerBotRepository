@@ -29,14 +29,14 @@ def preprocess_text1(sentence):
 
 
 #ADD NEW TASK
-def correct_text2(sentence):
-    is_correct = re.match(r'^[Add new task]+$', sentence)
-    return bool(is_correct)
-
-def preprocess_text2(sentence):
-    sentence = re.sub(r'\W+', '', sentence.lower().strip())  # Delete special symbols
-    sentence = re.sub(r'([a-z])\1+', r'\1', sentence)  # Remove duplicates
-    return sentence
+# def correct_text2(sentence):
+#     is_correct = re.match(r'^[Add new task]+$', sentence)
+#     return bool(is_correct)
+#
+# def preprocess_text2(sentence):
+#     sentence = re.sub(r'\W+', '', sentence.lower().strip())  # Delete special symbols
+#     sentence = re.sub(r'([a-z])\1+', r'\1', sentence)  # Remove duplicates
+#     return sentence
 
 
 
