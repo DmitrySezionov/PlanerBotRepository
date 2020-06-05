@@ -7,8 +7,6 @@ bot = telebot.TeleBot(TOKEN)
 keyboard_start = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard_start.row('My Tasks', 'Add new task', 'Settings')
 
-keyboard_add = telebot.types.ReplyKeyboardMarkup(True, True)
-keyboard_add.row('Task Today', 'Task for 3 days' 'All Tasks')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
